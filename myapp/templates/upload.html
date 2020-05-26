@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body bgcolor="#afafaf">
+{% block content %}
+<h1><marquee bgcolor="pink">welcome you all</marquee></h1>
+<h2><center>upload resume</center></h2><br/>
+<form name="form" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<h3><center>Select file to upload :</center></h3><br/>
+<center><input type="file" name="document" Id="fileToupload" accept=".docx">
+    <button type="submit" value="submit" name="submit">submit</button></center>
+</form>
+{% endblock %}
+</body>
+</html>

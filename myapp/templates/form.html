@@ -1,0 +1,32 @@
+<Html>
+<head>
+<title>
+Registration Page
+</title>
+</head>
+<body bgcolor="#088B8B">
+{% block content %}
+<h1>verify your data</h1>
+<br>
+<br>
+<form action="/action_page.php">
+<center> <label> Firstname:</label>
+<input type="text" name="firstname" id="firstname" size="30" placeholder="{{ fname }}" /> <br> <br>
+<label>Lastname : </label>
+<input type="text" name="lastname" id="lastname" size="30" placeholder="{{ lname }}"/> <br> <br>
+<label>mail id   :</label>
+<input type="text" name="mailid" id="mailid" size="30" placeholder="{{ mailid }}"/> <br> <br>
+<label>city      :</label>
+<input type="text" name="city" id="city" size="30" placeholder="{{ city }}"/> <br> <br>
+<label>pincode   :</label>
+<input type="text" name="pincode" id="pincode" size="30" placeholder="{{ pincode }}"/> <br> <br>
+<label>state     :</label>
+<input type="text" name="state" id="state" size="30" placeholder="{{ state}}"/> <br> <br>
+<label>country   :</label>
+<input type="text" name="country" id="country" size="30" placeholder="{{ country}}"/> <br> <br>
+<label>skill     :</label>
+<input type="text" name="skill"  id="skill" size="30" placeholder="{{ skill }}"/> <br> <br>
+</center>
+    {% endblock %}
+</body>
+</html>
